@@ -19,7 +19,7 @@ body{
 
 .glass_background{
     /* background-image: url("./background001.jpg"); */
-    background: linear-gradient(120deg, #e79b9b, #ecdea2);
+    background: linear-gradient(120deg, #763a3a, #756b42);
     background-size: cover;
     height: 360px;
     width: 800px;
@@ -34,11 +34,11 @@ body{
 }
 
 .glass_title{
-    color: #404040;
+    color: #ffffff;
     text-shadow: 0 4px 8px #00000060;
     font-family: "Zen Kaku Gothic Antique";
     font-size: 24px;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 .glass_container{
@@ -71,8 +71,8 @@ body{
 }
 
 .article_icon{
-    height: 30px;
-    width: 30px;
+    height: 24px;
+    width: 24px;
     margin-left: 8px;
 }
 
@@ -94,27 +94,52 @@ body{
 }
 
 .add_button{
-    width: 36px;
-    height: 36px;
-    padding: 6px;
+    background-color: #00000000;
+    width: 32px;
+    height: 32px;
+    padding: 4px;
     border-radius: 4px;
+    transition: background-color 0.3s;
 
     /* border: 1px dotted #FF4040; */
 }
 
+.add_button:hover{
+    background-color: #00000020;
+}
+
+.add_button:active{
+    background-color: #00000040;
+}
+
 .icon_wrap{
-    display: inline-flex;
-    /* border: 1px dotted #ff2020; */
-    gap: 20px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.icon_wrap img{
+    background-color: #00000000;
+    height: 32px;
+    width: 32px;
+    padding: 4px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.icon_wrap img:hover{
+    background-color: #00000020;
+}
+
+.icon_wrap img:active{
+    background-color: #00000040;
 }
 
 .icon_wrap span{
-    display: inline-block;
-    background-color: #ffffff40;
-    border: 1px solid #ffffff;
-    border-radius: 6px;
-    height: 24px;
-    width: 24px;
+    /* display: inline-block; */
+    background-color: #ffffff;
+    height: 16px;
+    width: 1px;
 }
 
 /* .icon_wrap span:nth-child(1){
