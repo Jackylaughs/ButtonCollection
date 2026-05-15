@@ -9,48 +9,97 @@ body{
     background-color: #eeeeee;
 }
 
+/* .zen-kaku-gothic-antique-regular {
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+} */
+
+/* グラスモーフィズム */
+
 .glass_background{
-    background-image: url("./background001.jpg");
+    /* background-image: url("./background001.jpg"); */
+    background: linear-gradient(120deg, #e79b9b, #ecdea2);
     background-size: cover;
-    height: 450px;
+    height: 360px;
     width: 800px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     position: relative;
     top: 20px;
     left: 20px;
+    gap: 18px;
+}
+
+.glass_title{
+    color: #404040;
+    text-shadow: 0 4px 8px #00000060;
+    font-family: "Zen Kaku Gothic Antique";
+    font-size: 24px;
+    font-weight: 600;
 }
 
 .glass_container{
     background-color: #ffffff20;
     backdrop-filter: blur(4px);
-    padding: 20px 15px 20px 15px;
+    padding: 24px 18px 24px 18px;
     border: 1px solid #ffffff40;
     border-radius: 20px;
-    box-shadow: 0 4px 24px #00000080;
+    height: 142px;
+    width: 518px;
+    box-shadow: 0 8px 16px #00000060;
     display: inline-flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: absolute;
-    gap: 15px;
+    top: 40%;
+    gap: 18px;
+}
+
+.glass_searchbar_wrap{
+    background-color: #ffffffaa;
+    border: 2px solid #ffffff80;
+    border-radius: 12px;
+    height: 50px;
+    width: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+
+.article_icon{
+    height: 30px;
+    width: 30px;
+    margin-left: 8px;
 }
 
 .glass_searchbar{
     color: #404040;
+    background-color: #00000000;
+    border: none;
+    font-family: "Zen Kaku Gothic Antique";
     font-size: 14px;
-    background-color: #ffffffaa;
-    border: 2px solid #ffffff80;
-    border-radius: 15px;
-    padding: 25px;
-    height: 50px;
-    width: 400px;
+    font-weight: 600;
+    height: 30px;
+    width: 380px;
+    padding: 20px 0 20px 8px;
     caret-color: #404040;
 }
 
 .glass_searchbar:focus{
     outline: none;
+}
+
+.add_button{
+    width: 36px;
+    height: 36px;
+    padding: 6px;
+    border-radius: 4px;
+
+    /* border: 1px dotted #FF4040; */
 }
 
 .icon_wrap{
@@ -61,8 +110,21 @@ body{
 
 .icon_wrap span{
     display: inline-block;
+    background-color: #ffffff40;
     border: 1px solid #ffffff;
     border-radius: 6px;
-    height: 20px;
-    width: 20px;
+    height: 24px;
+    width: 24px;
 }
+
+/* .icon_wrap span:nth-child(1){
+    background-color: #ff303040;
+}
+
+.icon_wrap span:nth-child(2){
+    background-color: #30ff3040;
+}
+
+.icon_wrap span:nth-child(3){
+    background-color: #3030ff40;
+} */

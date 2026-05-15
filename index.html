@@ -8,11 +8,24 @@
 
     <link rel="stylesheet" href="./sanitize.css">
     <link rel="stylesheet" href="./style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="glass_background">
+        <h2 class="glass_title">グラスモーフィズムの習作</h2>
         <div class="glass_container">
-            <input type="text" class="glass_searchbar">
+            <div class="glass_searchbar_wrap">
+                <img src="./article_icon.svg" alt="メモ" class="article_icon">
+                <input 
+                    type="text"
+                    placeholder="ここに文字を入力"
+                    maxlength="26"
+                    class="glass_searchbar">
+                <img src="./add_icon.svg" alt="追加" class="add_button">
+            </div>
             <div class="icon_wrap">
                 <span class="icon_a"></span>
                 <span class="icon_b"></span>
