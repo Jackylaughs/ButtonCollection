@@ -6,7 +6,7 @@
 }
 
 body{
-    background-color: #eeeeee;
+    background-color: #d8d8d8;
 }
 
 /* .zen-kaku-gothic-antique-regular {
@@ -19,17 +19,15 @@ body{
 
 .glass_background{
     /* background-image: url("./background001.jpg"); */
-    background: linear-gradient(120deg, #763a3a, #756b42);
+    background: linear-gradient(120deg, #642c2c, #645a30);
     background-size: cover;
-    height: 360px;
+    height: 400px;
     width: 800px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
     position: relative;
-    top: 20px;
-    left: 20px;
     gap: 18px;
 }
 
@@ -39,6 +37,8 @@ body{
     font-family: "Zen Kaku Gothic Antique";
     font-size: 24px;
     font-weight: 400;
+    position: absolute;
+    top: 16%;
 }
 
 .glass_container{
@@ -50,11 +50,12 @@ body{
     height: 142px;
     width: 518px;
     box-shadow: 0 8px 16px #00000060;
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    top: 40%;
+    position: absolute;
+    bottom: 30%;
     gap: 18px;
 }
 
@@ -137,19 +138,31 @@ body{
 
 .icon_wrap span{
     /* display: inline-block; */
-    background-color: #ffffff;
+    background-color: #ffffff80;
     height: 16px;
     width: 1px;
 }
 
-/* .icon_wrap span:nth-child(1){
-    background-color: #ff303040;
+.glass_background a{
+    color: #ffffff;
+    font-family: "Zen Kaku Gothic Antique";
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    position: absolute;
+    bottom: 4px;
+    right: 4px;
+    padding: 4px 12px;
+    border: 2px solid #ffffff80;
+    border-radius: 8px;
+    transition: background-color 0.2s;
 }
 
-.icon_wrap span:nth-child(2){
-    background-color: #30ff3040;
+.glass_background a:hover{
+    background-color: #ffffff20;
 }
 
-.icon_wrap span:nth-child(3){
-    background-color: #3030ff40;
-} */
+.glass_background a img{
+    height: 20px;
+    width: 20px;
+}
