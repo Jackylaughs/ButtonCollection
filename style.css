@@ -9,20 +9,15 @@ body{
     background-color: #d8d8d8;
 }
 
-/* .zen-kaku-gothic-antique-regular {
-  font-family: "Zen Kaku Gothic Antique", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-} */
-
 /* グラスモーフィズム */
 
 .glass_background{
-    /* background-image: url("./background001.jpg"); */
+    font-family: "Noto Sans JP";
     background: linear-gradient(120deg, #642c2c, #645a30);
     background-size: cover;
     height: 400px;
     width: 800px;
+    margin: 16px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -34,16 +29,16 @@ body{
 .glass_title{
     color: #ffffff;
     text-shadow: 0 4px 8px #00000060;
-    font-family: "Zen Kaku Gothic Antique";
     font-size: 24px;
-    font-weight: 400;
+    font-weight:600;
     position: absolute;
     top: 16%;
 }
 
 .glass_container{
     background-color: #ffffff20;
-    backdrop-filter: blur(4px);
+    z-index: 10;
+    backdrop-filter: blur(2px);
     padding: 24px 18px 24px 18px;
     border: 1px solid #ffffff40;
     border-radius: 20px;
@@ -81,7 +76,6 @@ body{
     color: #404040;
     background-color: #00000000;
     border: none;
-    font-family: "Zen Kaku Gothic Antique";
     font-size: 14px;
     font-weight: 600;
     height: 30px;
@@ -143,9 +137,17 @@ body{
     width: 1px;
 }
 
+.glass_background p{
+    color: #ffffff80;
+    font-size: 32px;
+    font-weight: 600;
+    position: absolute;
+    left: 8px;
+    bottom: 96px;
+}
+
 .glass_background a{
     color: #ffffff;
-    font-family: "Zen Kaku Gothic Antique";
     font-size: 16px;
     font-weight: 400;
     text-decoration: none;
@@ -165,4 +167,17 @@ body{
 .glass_background a img{
     height: 20px;
     width: 20px;
+}
+
+.glass_impression{
+    display: block;
+    margin: 16px;
+}
+
+.glass_impression h2{
+
+}
+
+.glass_impression ul{
+    padding-left: 24px;
 }
